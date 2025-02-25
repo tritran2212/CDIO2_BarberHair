@@ -1,0 +1,145 @@
+body{
+    font-family: "Roboto", serif;
+}
+html{
+    font-size: 15px;
+}
+
+/* HEADER */
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+.navbar {
+    background-color: #010101;
+}
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+.nav-link.active {
+    color: #ffc107 !important;
+}
+.btn-outline-success {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+.btn-outline-success:hover {
+    background-color: #ffc107;
+    color: #343a40;
+}
+.dropdown-menu {
+    background-color: #343a40;
+}
+.dropdown-item {
+    color: #ffffff;
+}
+.dropdown-item:hover {
+    background-color: #ffc107;
+    color: #343a40;
+}
+.navbar-brand img {
+    background-color: transparent !important;
+}
+/* CAROUSEL */
+#carousel{
+    margin-top: 5rem;
+}
+#carousel h2{
+    text-align: center;
+    letter-spacing: 3px;
+}
+.carousel-wrapper{
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+.btn-booking{
+    background-color:#ffc107 ;
+    border-color: transparent;
+    padding: .6rem 1.4rem ;
+    transition: .3s linear;
+    border-radius:5px;
+    transform: translateY(3px);
+}
+.btn-booking:hover{
+    background-color: #94824b;
+    color: #ffc107;
+    transform: translateY(0);
+}
+.gia {
+    color: #ffc107;
+    text-decoration:solid ;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.footer-card{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.footer-card .rate i{
+    color: #ffc107;
+}
+#btn-Datlich{
+    background-color: #010101;
+    color: #ffc107;
+    padding: 0.4rem 0.6rem;
+    border-color: #ffc107;
+    border-radius: 5px;
+    transition: .5s linear;
+   
+}
+#btn-Datlich:hover{
+    background-color: #ffc107;
+    color: #010101;
+}
+#btn-Search{
+    transition: .5s linear;
+}
+#inputSearch{
+    transition:  .3s linear;
+}
+#inputSearch:hover{
+    border: 3px solid ;
+    border-color: #ffc107;
+}
+.nav-item .nav-link{
+   transition: .3s linear;
+}
+.nav-item .nav-link:hover{
+   color: #ffc107!important;
+}
+/* Footer */
+footer {
+    margin-top: 4rem;
+    background-color: #010101;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+footer .container  h2{
+    font-size: 1.5rem;
+}
+
+footer .container  h2 i{
+    color: #ffc107;
+    font-size: 1.3rem;
+}
+.container .row a{
+    text-decoration: none;
+    color: #ffc107;
+}
+.container .row p i{
+    color: #ffc107;
+    margin-right: .3rem;
+}
+.container .row p{
+    font-size: 1.1rem;
+}

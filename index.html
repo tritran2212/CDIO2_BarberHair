@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <!-- Boostrap 5.0 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-TLeJ3C0ncTnQwNzF8jDyK9MKqVhwSyjkjt5v2P4jb2AexbjKK0F4uK1YBd_YNRp2VQ&amp;usqp=CAU"
+              class="rg_i Q4LuWd" jsname="Q4LuWd" width="100px" height="70px"
+              alt="Logo Barber Shop Đẹp Chất Sành Điệu Tải Miễn Phí AI, CDR, PNG"
+              data-noaft="1" data-ilt="1740202253239"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Trang
+                  Chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./dichvu.html">Bảng Giá</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dịch Vụ
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./muaHang.html">Mua Hàng </a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./lichhen.html">Lich Hẹn</a>
+              </li>
+              <li class="nav-item">
+
+                <button type="button" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal" id="btn-Datlich">Đặt Lịch
+                  Ngay</button>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search"
+                placeholder="Search" aria-label="Search" id="inputSearch">
+              <button class="btn btn-outline-success" type="submit"
+                id="btn-Search">Search</button>
+            </form>
+            <div class="modal fade" id="exampleModal" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đặt Chỗ
+                      Nhanh</h5>
+                    <button type="button" class="btn-close"
+                      data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i
+                                  class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" name="tk" id="tknv"
+                              class="form-control input-sm"
+                              placeholder="Tài khoản">
+                          </div>
+
+                          <span class="sp-thongbao" id="tbTKNV"></span>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i
+                                  class="fa fa-address-book"></i></span>
+                            </div>
+                            <input type="name" name="name" id="name"
+                              class="form-control input-sm"
+                              placeholder="Họ và tên">
+                          </div>
+                          <span class="sp-thongbao" id="tbTen"></span>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i
+                                  class="fa fa-envelope"></i></span>
+                            </div>
+                            <input type="email" name="email" id="email"
+                              class="form-control input-sm"
+                              placeholder="Email">
+                          </div>
+
+                          <span class="sp-thongbao" id="tbEmail"></span>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i
+                                  class="fa fa-key"></i></span>
+                            </div>
+                            <input type="password" name="password" id="password"
+                              class="form-control input-sm"
+                              placeholder="Mật khẩu">
+                          </div>
+                          <span class="sp-thongbao" id="tbMatKhau"></span>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i
+                                  class="fa fa-calendar"></i></span>
+                            </div>
+                            <input type="text" name="ngaylam" id="datepicker"
+                              class="form-control"
+                              placeholder="Ngày đặt">
+                          </div>
+
+                          <span class="sp-thongbao" id="tbNgay"></span>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i
+                                  class="fa fa-briefcase"></i></span>
+                            </div>
+                            <select class="form-control" id="chucvu">
+                              <option>Chọn Loại</option>
+                              <option>Hớt Tóc</option>
+                              <option>Hớt Tóc + Cạo Mặt </option>
+                              <option>Hớt Tóc + Rấy tai</option>
+                              <option>Hớt Tóc + Cạo Mặt +Rấy tai</option>
+
+                            </select>
+                          </div>
+
+                          <span class="sp-thongbao" id="tbChucVu"></span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger"
+                      data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">Xác
+                      Nhận</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="carousel">
+      <h2>Khám Phá Các Kiểu Tóc Nam Hot Nhất Hiện Nay!</h2>
+      <div class="carousel-wrapper">
+
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://cdn.tgdd.vn/Files/2021/08/05/1373210/top-20-kieu-toc-nam-dep-dan-dau-xu-huong-cuc-hot-cho-mua-he-202108051350021072.jpg"
+            class="card-img-top" alt="..." width="40%" height="50%">
+          <div class="card-body">
+            <h5 class="card-title">Tóc nam cho mặt tròn mập. </h5>
+            <p class="card-text">Nếu có khuôn mặt tròn mập, kiểu tóc như
+              Undercut, side part sẽ giúp khuôn mặt thon gọn hơn.</p>
+            <p class="gia"><b>Gía : 60.000đ</b></p>
+            <div class="footer-card">
+              <button class="btn-booking">Show More</button>
+              <div class="rate">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://cdn.tgdd.vn/Files/2021/08/05/1373210/top-20-kieu-toc-nam-dep-dan-dau-xu-huong-cuc-hot-cho-mua-he-202108051350164968.jpg"
+            class="card-img-top" alt="..." width="40%" height="45%">
+          <div class="card-body">
+            <h5 class="card-title">Kiểu tóc nam đẹp 7/3 </h5>
+            <p class="card-text">Kiểu tóc nam 7/3 đơn giản, tinh tế, giúp che
+              khuyết điểm và phù hợp với mọi gương mặt..</p>
+            <p class="gia"><b>Gía : 60.000đ</b></p>
+            <div class="footer-card">
+              <button class="btn-booking">Show More</button>
+              <div class="rate">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://cdn.tgdd.vn/Files/2021/08/05/1373210/top-20-kieu-toc-nam-dep-dan-dau-xu-huong-cuc-hot-cho-mua-he-202108051350491692.jpg"
+            class="card-img-top" alt="..." width="40%" height="45%">
+          <div class="card-body">
+            <h5 class="card-title">Kiểu tóc nam layer đẹp </h5>
+            <p class="card-text">Tóc nam layer cắt tỉa dài hai bên, tạo hình xếp
+              layer cá tính, trở thành trào lưu giới trẻ..</p>
+            <p class="gia"><b>Gía : 60.000đ</b></p>
+            <div class="footer-card">
+              <button class="btn-booking">Show More</button>
+              <div class="rate">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://cdn.tgdd.vn/Files/2021/08/05/1373210/top-25-kieu-toc-nam-dep-dan-dau-xu-huong-cuc-hot-cho-mua-he-202201111258198019.jpeg"
+            class="card-img-top" alt="..." width="40%" height="45%">
+          <div class="card-body">
+            <h5 class="card-title">Kiểu tóc nam Undercut </h5>
+            <p class="card-text">Undercut cắt ngắn hai bên, gáy cạo cao, mái
+              vuốt ngược, tạo vẻ lịch thiệp và làm nổi bật khuôn mặt..</p>
+            <p class="gia"><b>Gía : 60.000đ</b></p>
+            <div class="footer-card">
+              <button class="btn-booking">Show More</button>
+              <div class="rate">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2><i class="fa fa-map-marker-alt"></i> CHI NHÁNH</h2>
+           <div class="location">
+            
+            <p><i class="fa fa-star-of-david"></i>Địa chỉ: 123 Nguyễn Văn Linh,
+              Đà Nẵng</p>
+            <p>ĐT: <a href="#">033.6260.598</a></p>
+           </div>
+           <div class="location">
+            
+            <p><i class="fa fa-star-of-david"></i>Địa chỉ: 123 Nguyễn Văn Linh,
+              Đà Nẵng</p>
+            <p>ĐT: <a href="#">035.4768.598</a></p>
+           </div>
+           <div class="location">
+            
+            <p><i class="fa fa-star-of-david"></i>Địa chỉ: 123 Nguyễn Văn Linh,
+              Đà Nẵng</p>
+            <p>ĐT: <a href="#">034.6760.521</a></p>
+           </div>
+           
+          </div>
+          <div class="col-md-4">
+            <h2><i class="fa fa-angle-down"></i> CHÍNH SÁCH</h2>
+            <p>Chính sách bảo mật thông tin</p>
+            <p>Chính sách thanh toán</p>
+            <p>Chính sách đổi trả</p>
+            <p>Chính sách BMTT khách hàng</p>
+            <p>Trách nghiệm xã hội</p>
+          </div>
+          <div class="col-md-4">
+            <h2><i class="fa fa-envelope"></i> LIÊN HỆ</h2>
+            <p>Điên Thoại:034.6760.598</p>
+            <p>Email: <a href="#">vantriqn2212@gmail.com</a></p>
+            <p>Số Tài Khoản: <a href="#">0346760598</a></p>
+            <p>Chủ Tài Khoản:Trần Văn Trí</p>
+          </div>
+         
+        </div>
+
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    </body>
+  </html>
