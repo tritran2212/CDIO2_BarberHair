@@ -98,9 +98,13 @@ body {
     color: #010101;
 }
 #btn-Search{
+    position: relative;
+    left: -60px;
     transition: .5s linear;
 }
 #inputSearch{
+    position: relative;
+    left: -60px;
     transition:  .3s linear;
 }
 #inputSearch:hover{
@@ -143,3 +147,21 @@ footer .container  h2 i{
 .container .row p{
     font-size: 1.1rem;
 }
+
+/* BANNER */
+#bannerCarousel {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+#bannerCarousel img {
+    height: 380px; /* Điều chỉnh chiều cao banner */
+    object-fit: cover; /* Đảm bảo ảnh hiển thị đẹp */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+/*               */
