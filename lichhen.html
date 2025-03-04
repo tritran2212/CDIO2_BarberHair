@@ -86,5 +86,39 @@
             </tbody>
         </table>
     </div> 
+   
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let Lichs = JSON.parse(localStorage.getItem('Lichs')) || [];
+            let ulLulich = document.getElementById("tableDanhSach");
+            let content = '';
+            for (let i = 0; i < Lichs.length; i++) {
+                content += `
+                <tr>
+                    <td>${Lichs[i].id}</td>
+                    <td>${Lichs[i].name}</td>
+                    <td>${Lichs[i].email}</td>
+                    <td>${Lichs[i].ngaydat}</td>
+                    <td>${Lichs[i].loai}</td>
+                    <td>${Lichs[i].tongtien}</td>
+                    <td>
+                        <button class="btn btn-danger" onclick="xoaLich(${i})">Xoá</button>
+                        <button class="btn btn-warning">Sửa</button>
+                    </td>
+                </tr>
+                `;
+            }
+            ulLulich.innerHTML = content;
+        });
+
+        function xoaLich(index) {
+            let Lichs = JSON.parse(localStorage.getItem('Lichs')) || [];
+            Lichs.splice(index, 1); // Xóa phần tử tại vị trí index
+            localStorage.setItem('Lichs', JSON.stringify(Lichs)); // Cập nhật Local Storage
+            location.reload(); // Tải lại trang để cập nhật danh sách hiển thị
+        }
+    </script>
+    
+    <script src="./index.js"></script>
 </body>
 </html>
